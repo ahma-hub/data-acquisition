@@ -1,5 +1,5 @@
 # Data acquisition interfaces
-The current repository contains all the scripts needed to interact with data acquisition interfaces published in the paper: "Out of device malware analysis:leveraging IoT devices electromagnetic emanation".
+The current repository contains all the scripts needed to interact with data acquisition interfaces published in the paper: "Obfuscation Revealed: Electromagnetic obfuscated malware classification".
 
 # signal-processing
 Compilation of tools to process side-channel data.
