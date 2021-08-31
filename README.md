@@ -1,3 +1,13 @@
+# Requirements
+
+This repository supports PicoScope® 6000 Series oscilloscope.
+
+To install required Python packages:
+
+```bash
+pip install -r requirements.txt
+```
+
 # Data acquisition interfaces
 The current repository contains all the scripts needed to interact with data acquisition interfaces published in the paper: "Obfuscation Revealed: Electromagnetic obfuscated malware classification".
 
@@ -31,9 +41,23 @@ optional arguments:
                         oscilloscope on the pi
 ```
 
+This script interacts with target device via SSH. To change IP address of target device, please modify this line in generate_traces_pico.py .
+
+```python
+ssh.connect('192.168.1.177', username='pi')
+```
+
+Example of traces capture:
+```bash
+./generate_traces_pico.py ./cmdFiles/cmdFile_bashlite.csv -c 3000 -d ./bashlite-2.43s-2Mss/ -t B --timebase 80 -n oscilloscope -w
+/home/pi/wrapper
+```
+
+This will capture 3000 traces from the oscilloscope, execute Bashlite malware with path defined in cmdFile_bashlite.csv, and output traces to folder bashlite-2.43s-2Mss. The oscilloscope will be executed in Block mode for oscilloscope under sampling frequency "80" which can be referred to the (documentation)[https://www.picotech.com/download/manuals/picoscope-6000-series-programmers-guide.pdf] of PicoScope® 6000 Series oscilloscope.
+
 ### Command file
 You now need to provide the list of commands you want to monitor in a cvs like file cmdFile.
-The file must be of this form: pretrigger-command,command,tag
+The file must be of this form: `pretrigger-command,command,tag`
 
 Every loop iteration will, for each line of the cmdFile, do the following:
 1. Execute the pretrigger command on the device via ssh
