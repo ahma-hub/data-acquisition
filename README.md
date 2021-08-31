@@ -53,7 +53,7 @@ Example of traces capture:
 /home/pi/wrapper
 ```
 
-This will capture 3000 traces from the oscilloscope, execute Bashlite malware with path defined in cmdFile_bashlite.csv, and output traces to folder bashlite-2.43s-2Mss. The oscilloscope will be executed in Block mode for oscilloscope under sampling frequency "80" which can be referred to the (documentation)[https://www.picotech.com/download/manuals/picoscope-6000-series-programmers-guide.pdf] of PicoScope® 6000 Series oscilloscope.
+This will capture 3000 traces from the oscilloscope, execute Bashlite malware with path defined in cmdFile_bashlite.csv, and output traces to folder bashlite-2.43s-2Mss. The oscilloscope will be executed in Block mode for oscilloscope under sampling frequency "80" which can be referred to the [documentation](https://www.picotech.com/download/manuals/picoscope-6000-series-programmers-guide.pdf) of PicoScope® 6000 Series oscilloscope.
 
 ### Command file
 You now need to provide the list of commands you want to monitor in a cvs like file cmdFile.
@@ -72,4 +72,4 @@ sudo insmod keysniffer/kisni-4.19.57-v7+.ko,./keyemu/emu.sh A 10,keyemu_kisni
 ```
 
 ### Wrapper path
-To trigger the oscilloscope, we launch a [wrapper]() program on the device. This wrapper will simply send the trigger and launch the program we want to monitor for the according time. It is automatically called by generate\_traces\_pico.py. You just need to precise its path on the monitored device.
+To trigger the oscilloscope, we launch a [wrapper](./wrapper) program on the device. This wrapper will simply send the trigger and launch the program we want to monitor for the according time. It is automatically called by generate\_traces\_pico.py. You just need to precise its path on the monitored device.
