@@ -1,0 +1,4 @@
+,/usr/bin/mpg321 -n 50 /home/pi/music.mp3,playaudio
+,/usr/bin/raspistill -o /home/pi/img.jpg -ex sports --nopreview --timeout 2,takepicture
+,/usr/bin/raspivid -o /home/pi/vid.h264 -t 2000 --nopreview,recordcamera
+,/usr/bin/MP4Box -add /home/pi/vid.h264 /home/pi/pivideo.mp4,encodevideo

@@ -1,0 +1,5 @@
+,/home/pi/obfuscated_mal/mirai_addopaque,mirai_addopaque
+,/home/pi/obfuscated_mal/mirai_virtualize,mirai_virtualize
+,/home/pi/obfuscated_mal/mirai_flatten,mirai_flatten
+sh init.sh,/home/pi/obfuscated_mal/gonnacry_Virtualize2,gonnacry_Virtualize2
+sh init.sh,/home/pi/obfuscated_mal/gonnacry_flatten,gonnacry_flatten

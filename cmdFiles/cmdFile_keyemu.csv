@@ -1,0 +1,2 @@
+sudo rmmod kisni,./keyemu/emu.sh A 10,clean
+sudo insmod keysniffer/kisni-4.19.57-v7+.ko,./keyemu/emu.sh A 10,infected

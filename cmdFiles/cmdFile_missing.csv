@@ -1,0 +1,6 @@
+sh init.sh,/home/pi/missing-obf/DES-gonacry,des-gonnacry
+sh init.sh,/home/pi/missing-obf/DES-upx-gonacry,des-upx-gonnacry
+,/home/pi/missing-obf/bashlite_flatten,bashlite-flatten
+,/home/pi/missing-obf/mirai_bcf,mirai-bcf
+,/home/pi/missing-obf/mirai_cfflatten,mirai-cfflatten
+,/home/pi/missing-obf/mirai_sub,mirai-sub

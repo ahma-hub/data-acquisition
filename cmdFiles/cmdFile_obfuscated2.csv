@@ -1,0 +1,4 @@
+sh init.sh,/home/pi/more-obfuscated-gonnacry/gonnacry_addopaque,gonnacry_addopaque
+sh init.sh,/home/pi/more-obfuscated-gonnacry/gonnacry_bcf,gonnacry_bcf
+sh init.sh,/home/pi/more-obfuscated-gonnacry/gonnacry_cfflatten,gonnacry_cfflatten
+sh init.sh,/home/pi/more-obfuscated-gonnacry/gonnacry_sub,gonnacry_sub
