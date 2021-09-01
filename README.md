@@ -72,4 +72,4 @@ sudo insmod keysniffer/kisni-4.19.57-v7+.ko,./keyemu/emu.sh A 10,keyemu_kisni
 ```
 
 ### Wrapper path
-To trigger the oscilloscope, we launch a [wrapper](./wrapper) program on the device. This wrapper will simply send the trigger and launch the program we want to monitor for the according time. It is automatically called by generate\_traces\_pico.py. You just need to precise its path on the monitored device.
+To trigger the oscilloscope, we launch a [wrapper](./wrapper) program on the device. This wrapper will simply send the trigger and launch the program we want to monitor for the according time. It is automatically called by generate\_traces\_pico.py. You just need to precise its path on the monitored device. The compiled wrapper must be stored in `/home/pi/wrapper` or can be modified in `generate_traces_pico.py `.
