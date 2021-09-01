@@ -49,7 +49,7 @@ ssh.connect('192.168.1.177', username='pi')
 
 Example of traces capture:
 ```bash
-./generate_traces_pico.py ./cmdFiles/cmdFile_bashlite.csv -c 3000 -d ./bashlite-2.43s-2Mss/ -t B --timebase 80 -n oscilloscope -w
+./generate_traces_pico.py ./cmdFiles/cmdFile_bashlite.csv -c 3000 -d ./bashlite-2.43s-2Mss/ -t B --timebase 80 -n 5000000 -w
 /home/pi/wrapper
 ```
 
