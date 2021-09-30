@@ -1,7 +1,8 @@
+# coding=utf-8
 """
  # File: picoscope.py 
  # Project: data-acquisition
- # Last Modified: 2021-8-2
+ # Last Modified: 2021-9-30
  # Created Date: 2021-8-2
  # Copyright (c) 2021
  # Author: AHMA project (Univ Rennes, CNRS, Inria, IRISA)
@@ -9,7 +10,6 @@
  
 """
 
-# coding=utf-8
 from ctypes import *
 from picosdk.ps6000 import ps6000 as ps
 from picosdk.functions import adc2mV, assert_pico_ok

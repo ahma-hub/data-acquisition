@@ -1,7 +1,8 @@
+#!/usr/bin/python3
 """
  # File: signal_processing.py 
  # Project: data-acquisition
- # Last Modified: 2021-8-2
+ # Last Modified: 2021-9-30
  # Created Date: 2021-8-2
  # Copyright (c) 2021
  # Author: AHMA project (Univ Rennes, CNRS, Inria, IRISA)
@@ -9,7 +10,6 @@
  
 """
 
-#!/usr/bin/python3
 from typing import Any, Union
 from scipy import signal
 import matplotlib.pyplot as plt
